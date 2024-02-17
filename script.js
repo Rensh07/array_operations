@@ -10,9 +10,10 @@ const arr1 = [1, 0, 2, 3, 4];
 const arr2 = [3, 5, 6, 7, 8, 13];
 
 function sum(arr1, arr2) {
+  max1 = Math.max(arr1.length, arr2.length);
   const sumArray = [];
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < max1; i++) {
     const val1 = arr1[i] || 0;
     const val2 = arr2[i] || 0;
     sumArray.push(val1 + val2);
