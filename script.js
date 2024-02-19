@@ -117,6 +117,26 @@ console.log(merge2(a1, a2));
 // Sample input: 025468
 // Expected output: 0-254-6-8.
 
+const input = '025468';
+
+function insertDashesBetweenEven(input) {
+  let output = '';
+
+  for (let i = 0; i < input.length; i++) {
+    const x1 = input[i];
+    const x2 = input[i + 1];
+
+    output += x1;
+
+    if (x1 % 2 === 0 && x2 % 2 === 0) {
+      output += '-';
+    }
+  }
+  return output;
+}
+
+console.log(insertDashesBetweenEven(input));
+
 // Write a JavaScript program to find the most frequent item in an array.
 
 // Sample input : [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
