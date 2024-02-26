@@ -160,3 +160,22 @@ for (let i = 0; i < array.length; i++) {
 }
 
 console.log(item + '  ' + mf + ' times ');
+
+// Find Min and Max from Array
+// Array = [ 1, 2, 3, 4]
+
+const r = [1, 2, 3, 4];
+
+let max = r[0];
+let min = r[0];
+for (let i = 0; i < r.length; i++) {
+  if (r[i] > max) {
+    max = r[i];
+  }
+  if (r[i] < min) {
+    min = r[i];
+  }
+}
+
+console.log('Max=' + max);
+console.log('Max=' + min);
